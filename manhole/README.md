@@ -53,3 +53,4 @@ GO_PRELOAD=/path/to/manhole.so
 [pprof]: https://godoc.org/net/http/pprof
 [default-servemux]: https://godoc.org/net/http#pkg-variables
 [yktotp]: https://github.com/GeertJohan/yubigo
+[gopreload]: https://github.com/Xe/gopreload
