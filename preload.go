@@ -1,3 +1,5 @@
+//+build linux,go1.8
+
 package gopreload
 
 import (
