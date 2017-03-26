@@ -6,7 +6,7 @@ the addition of instrumentation and debugging utilities.
 
 ## Pluginizer
 
-`pliginizer` is a bit of glue that makes it easier to turn underscore imports
+`pluginizer` is a bit of glue that makes it easier to turn underscore imports
 imto plugins:
 
 ```console
