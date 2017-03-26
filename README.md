@@ -7,7 +7,7 @@ the addition of instrumentation and debugging utilities.
 ## Pluginizer
 
 `pluginizer` is a bit of glue that makes it easier to turn underscore imports
-imto plugins:
+into plugins:
 
 ```console
 $ go get github.com/Xe/gopreload/cmd/pluginizer
