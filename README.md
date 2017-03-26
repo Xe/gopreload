@@ -4,6 +4,29 @@ gopreload
 An emulation of the linux libc `LD_PRELOAD` except for use with Go plugins for
 the addition of instrumentation and debugging utilities.
 
+## Pluginizer
+
+`pliginizer` is a bit of glue that makes it easier to turn underscore imports
+imto plugins:
+
+```console
+$ go get github.com/Xe/gopreload/cmd/pluginizer
+$ pluginizer -help
+Usage of pluginizer:
+  -dest string
+        destination package to generate
+  -pkg string
+        package to underscore import
+$ pluginizer -pkg github.com/lib/pq -dest github.com/Xe/gopreload/database/postgres
+To build this plugin:
+  $ go build -buildmode plugin -o /path/to/output.so github.com/Xe/gopreload/database/postgres
+```
+
+### Database drivers
+
+I have included plugin boilerplate autogenned versions of the sqlite, postgres
+and mysql database drivers.
+
 ## Manhole
 
 [`manhole`][manhole] is an example of debugging and introspection tooling that has
